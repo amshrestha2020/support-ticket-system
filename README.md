@@ -160,4 +160,25 @@ Use an API client like Postman to test the various endpoints:
     ```
 
 ### Update user role (Admin):
--
+- **PUT /api/users/role**
+    ```json
+    {
+      "email": "agent@example.com",
+      "role": "agent"
+    }
+    ```
+    Headers:
+    ```json
+    {
+      "Authorization": "Bearer <JWT_TOKEN>"
+    }
+    ```
+
+### Get all users (Admin):
+- **GET /api/users**
+    Headers:
+    ```json
+    {
+      "Authorization": "Bearer <JWT_TOKEN>"
+    }
+    ```
